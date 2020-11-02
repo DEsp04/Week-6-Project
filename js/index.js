@@ -71,3 +71,27 @@ let todoList = {
 };
 
 
+//methods inside this object will handle different events like click
+let handlers = {
+  displayTodos: function () { 
+    todoList.displayTodos();
+  },
+  toggleAll: function () { 
+    todoList.toggleAll();
+  },
+  addTodo: function () { 
+    let addTodoTextInput = document.getElementById('addTodoTextInput');
+    todoList.addTodo(addTodoTextInput.value);
+    addTodoTextInput.value = '';
+  },
+  changeTodo: function () { 
+    let changeTodoPositionInput = document.getElementById('changeTodoPositionInput');
+    let changeTodoTextInput = document.getElementById('changeTodoTextInput');
+    todoList.changeTodo(changeTodoPositionInput.valueAsNumber, changeTodoTextInput.value);
+    //clear input was you're done
+    changeTodoPositionInput.value = "";
+    changeTodoTextInput.value = "";
+  }
+}
+
+
