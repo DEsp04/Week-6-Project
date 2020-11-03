@@ -7,18 +7,24 @@
   <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <h1>Todo-List</h1>
+  <header>
+    <h1>Todo-List</h1>
+  </header>
 
-  <div>
-    <button onclick="handlers.toggleAll()">Toggle All</button>
+  <div id="flex">
+    <div>
+      <button onclick="handlers.toggleAll()">Toggle All</button>
+    </div>
+
+    <div id = "flex2">
+      <button onclick="handlers.addTodo()">Add</button>
+      <input type="text" id="addTodoTextInput">
+    </div>
   </div>
 
-  <div>
-    <button onclick="handlers.addTodo()">Add</button>
-    <input type="text" id="addTodoTextInput">
+  <div id = "todoList">
+    <ul></ul>
   </div>
-
-  <ul></ul>
 
   <script type="text/javascript" src="js/index.js"></script>
 </body>

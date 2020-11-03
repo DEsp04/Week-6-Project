@@ -1,0 +1,89 @@
+html {
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+header {
+  width: 100vw;
+  background-color: #00005d;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+  /* position: absolute; */
+  z-index: 1;
+}
+
+h1 {
+  font-family: 'Inconsolata', monospace;
+  margin: 0;
+  color: #e6e6e6;
+  font-size: 2em;
+  font-weight: 400;
+  padding: 10px 12px;
+  margin: 0;
+  position:relative;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+#flex {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  position: absolute;
+  top: 189px;
+  left: 50%;
+  /* bring your own prefixes */
+  transform: translate(-50%, -50%);
+}
+
+#flex2 {
+  display: flex;
+}
+
+button {
+  display: inline-block;
+  border: none;
+  margin: 0 4%;
+  text-align: center;
+  outline: none;
+  cursor: pointer;
+  background-color: #4caf50;
+}
+ #todoList {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  top: 223px;
+  width: 100%;
+ }
+
+ ul {
+   list-style: none;
+    padding: 0;
+ }
+
+ li {
+   display: flex;
+   justify-content: center;
+   margin-bottom: 5%;
+ }
+
+
+ #addTodoTextInput {
+  border-color: black;
+  outline: none;
+}
