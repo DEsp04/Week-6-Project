@@ -1,9 +1,9 @@
-//Encapsulation: Create Todo properties
+//Encapsulation (Constructor Function): Create Todo properties
 function Todo() { 
   this.todos = [];
 }
 
-//Encapsulation: Create Todo methods
+//Encapsulation (Constructor Function): Create Todo methods
 Todo.prototype = {
   addTodo: function (todoText) { 
     //pushing object to todos array
