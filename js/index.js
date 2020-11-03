@@ -1,4 +1,4 @@
-//Encapsulation (Constructor Function): Create Todo properties
+//Encapsulation (Constructounction): Create Todo properties
 function Todo() { 
   this.todos = [];
 }
